@@ -1,5 +1,6 @@
-from barchart_plotter import BarChartPlotter
 import json
+
+from barchart_plotter import BarChartPlotter
 
 with open('NB_measures.json') as json_file:
     data_nb = json.load(json_file)
@@ -23,12 +24,14 @@ for case in joined_data:
     measures_sensitivity[case['name']] = case['sensitivity']
     measures_specificity[case['name']] = case['specificity']
 
-bar_plotter_accuracy = BarChartPlotter( 'Accuracy', **measures_accuracy)
-bar_plotter_precision = BarChartPlotter( 'Precision', **measures_precision)
-bar_plotter_recall = BarChartPlotter( 'Recall', **measures_recall)
-bar_plotter_f1 = BarChartPlotter( 'F1', **measures_f1)
-bar_plotter_sensitivity = BarChartPlotter( 'Sensitivity', **measures_sensitivity)
-bar_plotter_specificity = BarChartPlotter( 'Specificity', **measures_specificity)
+bar_plotter_accuracy = BarChartPlotter('Accuracy', **measures_accuracy)
+bar_plotter_precision = BarChartPlotter('Precision', **measures_precision)
+bar_plotter_recall = BarChartPlotter('Recall', **measures_recall)
+bar_plotter_f1 = BarChartPlotter('F1', **measures_f1)
+bar_plotter_sensitivity = BarChartPlotter(
+    'Sensitivity', **measures_sensitivity)
+bar_plotter_specificity = BarChartPlotter(
+    'Specificity', **measures_specificity)
 
 bar_plotter_accuracy.plot()
 bar_plotter_precision.plot()
