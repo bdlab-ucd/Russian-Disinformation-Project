@@ -9,7 +9,7 @@ This project is carried out by Faculty members Dr. Farnoush Banaei-Kashani and D
 We utilized Support Vector Machine and Naive Bayes based solutions to training on textual data in the dataset. We gained successful metrics from this which can be viewed in our plots directory. 
 
 ## Deep Convolutional Neural Networks on Image Data
-This is an ongoing area we are experimenting with. We have gained successful metrics via VGG16 and ResNet50. These results can also be viewed in the plots directory.
+This is an ongoing area we are experimenting with. We have gained successful metrics via VGG16 and ResNet50. These results can also be viewed in the Russian-Disinformation-Project/CNN_experiments/CNN experiments metrics directory.
 
 ## Latent Dirichlet Allocation to Topic Model
 We utilized LDA to derive the dominant themes in our data and to draw correlations between the themes and data samples themselves.
